@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beandicated Coffee</title>
+    <link rel ="stylesheet"  href ="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/25644a6799.js" crossorigin="anonymous"></script>
+
+<!--Owl Crousel css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
+<!--Owl Crousel css-->
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+<link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+<!--Jquery-->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!--Jquery-->
+
+
+</head>
+<body>
+    <section class="head">
+        <div class="content flex1">
+            <div class="social_media  flex">
+                <span>Follow Us</span>
+                <hr>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="logo">
+                    <img src="image/beandicated web logo.png" alt="" class="logo-1">
+                <div class="account social_media flex">
+                <i class="fa fa-user"></i>
+                <i class="fas fa-shopping-bag"></i>
+                <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <nav>
+        <div class="sidenav" id="mysidenav">
+      <span class="closebtn" onclick="closeNav()">&times;</span>
+      <div class="menu_item">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Product</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+        </div>
+        <div class="social_media">
+            <i class="fas fa-bars hamburger-icon" onclick="openNav()"></i>
+        </div>
+      </nav>
+    </header>
+    <script>
+     function openNav(){
+        document.getElementById("mysidenav").style.width = "250px";
+
+     }
+
+     function closeNav(){
+        document.getElementById("mysidenav").style.width = "0";
+
+     }
+
+    </script>
+
+    <section class="home">
+        <div class="item">
+         <div class="heading">
+    <h1><span>Beandicated Coffee</span>Best Aroma</h1>
+     <p>Welcome to Beandicated a cozy coffee shop that offers a warm and inviting atmosphere for coffee lovers of all ages. Our mission is to provide our customers with high-quality, locally roasted coffee beans, as well as a selection of delicious pastries and snacks.
+       
+     </p>       
+    <button  type="button" name="button">Coffee Flavors</button>     
+    </div>
+    <div class="img">
+    <img src="image/barista.jpg"  alt="">
+    </div>
+        </div>
+    </section>
+
+    <section class="menu top">
+     <div class="container">
+        <div class="heading">
+      <h5>Beandicated Menu</h5>
+      <h2>Amazing Products</h2>
+        </div>
+
+        <div class="owl-carousel owl-theme mtop">
+            <div class="item">
+               <div class="img">
+           <img src="image/m1.png" alt="">       
+               </div>
+             <div class="text">
+      <h3>Coffee Drinks</h3>  
+               
+             </div>
+            </div>  
+            <div class="item">
+                <div class="img">
+            <img src="image/m2.png" alt="">       
+                </div>
+              <div class="text">
+       <h3>Dalgona Coffeee</h3>  
+              
+              </div>
+             </div>  
+             <div class="item">
+                <div class="img">
+            <img src="image/m3.jpg" alt="">       
+                </div>
+              <div class="text">
+       <h3>Wheat Bread </h3>  
+              
+              </div>
+             </div>  
+             <div class="item">
+                <div class="img">
+            <img src="image/m4.png" alt="">       
+                </div>
+              <div class="text">
+       <h3>Strawberry Cheesecake</h3>  
+             
+              </div>
+             </div>  
+             <div class="item">
+                <div class="img">
+            <img src="image/m5.png" alt="">       
+                </div>
+              <div class="text">
+       <h3>Tiramisu Cake</h3>  
+          
+              </div>
+             </div>  
+             <div class="item">
+                <div class="img">
+            <img src="image/m6.jpg" alt="">       
+                </div>
+              <div class="text">
+       <h3>Fruit Cake</h3>  
+            
+              </div>
+             </div>  
+             <div class="item">
+                <div class="img">
+            <img src="image/m7.jpg" alt="">       
+                </div>
+              <div class="text">
+       <h3>Choco  Croisant</h3>  
+             
+              </div>
+             </div> 
+        </div>
+
+     </div>
+    </section>
+<!-- Owl Carousel js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<!-- Owl Carousel js-->  
+
+   <script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:false,
+    dots:true,
+    responsive:{
+        511:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+    </script>
+
+<section class="wrapper mtop">
+
+<div class="container flex">
+   <div class="left">
+      <div class="heading heading2">
+<h1><span>Roasted Coffee<br></span>And Pastries</h1>
+<p>Light roasts are typically light brown in color and have a mild flavor with a slight acidity. They are known for their floral and fruity notes and are often preferred by those who enjoy a more delicate and nuanced coffee taste.he roast level can range from light to dark, with each level offering a unique flavor profile.</p>
+     
+      <div class="text flex">
+        <div class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+         <div class="add">
+            <h5>Our Location</h5>
+            <label>San Fernando, Jose Abad </label>
+         </div>
+      </div>
+   </div>
+   <div class="button">
+      <button>Get Started</button>
+      <button class="btn1">Contact Us</button>
+   </div>
+  </div>
+   <div class="right">
+   
+   </div>
+</div>
+</section>  
+
+<section class="list">
+    <div class="container">
+     <div class="grid">
+        <div class="box">
+         <img src="image/flat-icon1.png" class="flat-icon"  alt="">
+         <p>Wide Assortment</p>
+        </div>
+        <div class="box">
+            <img src="image/flat-icon2.png" class="flat-icon" alt="">
+            <p>Wide Assortment</p>
+           </div>
+           <div class="box">
+            <img src="image/flat-icon3.png" class="flat-icon" alt="">
+            <p>Wide Assortment</p>
+           </div>
+           <div class="box">
+            <img src="image/flat-icon4.png" class="flat-icon" alt="">
+            <p>Wide Assortment</p>
+           </div>
+           <div class="box">
+            <img src="image/flat-icon5.webp" class="flat-icon" alt="">
+            <p>Wide Assortment</p>
+           </div>
+           <div class="box">
+            <img src="image/flat-icon6.webp" class="flat-icon" alt="">
+            <p>Wide Assortment</p>
+           </div>
+     </div>
+    </div>
+</section>
+
+<section class="menu_list top">
+ <div class="container">
+    <div class="heading">
+        <h5>Beandicated Menu</h5>
+          <h2>Coffee House</h2>
+    </div>
+     <div class="content flex">
+        <div class="left">
+            <div class="box flex1">
+                <div class="img">
+                    <img src="image/cap1.png" class="cap" alt="">
+                </div>
+                <div class="text">
+                    <h3>Cappuccino </h3>
+                    <p>Coffee 50% , Milk 50% 280 ml</p>
+                </div>
+                 <hr>
+                 <div class="price heading">
+                    <h5>$3.20</h5>
+                 </div>
+            </div>
+            <div class="box flex1">
+                <div class="img">
+                    <img src="image/cap2.png" class="cap" alt="">
+                </div>
+                <div class="text">
+                    <h3>French Vanilla</h3>
+                    <p>Coffee 50% , Milk 50% 280 ml</p>
+                </div>
+                 <hr>
+                 <div class="price heading">
+                    <h5>$3.20</h5>
+                 </div>
+            </div>
+            <div class="box flex1">
+                <div class="img">
+                    <img src="image/cap3.png" class="cap" alt="">
+                </div>
+                <div class="text">
+                    <h3>Caramel</h3>
+                    <p>Coffee 50% , Milk 50% 280 ml</p>
+                </div>
+                 <hr>
+                 <div class="price heading">
+                    <h5>$3.20</h5>
+                 </div>
+            </div>
+            <div class="box flex1">
+                <div class="img">
+                    <img src="image/cap4.jpg" class="cap" alt="">
+                </div>
+                <div class="text">
+                    <h3>Cappuccino 2</h3>
+                    <p>Coffee 50% , Milk 50% 280 ml</p>
+                </div>
+                 <hr>
+                 <div class="price heading">
+                    <h5>$3.20</h5>
+                 </div>
+            </div>
+         <div class="right">
+            <div class="box flex1">
+                <div class="img">
+                    <img src="image/cap5.png" class="cap" alt="">
+                </div>
+                <div class="text">
+                    <h3>Pumpkin Spice</h3>
+                    <p>Coffee 50% , Milk 50% 280 ml</p>
+                </div>
+                 <hr>
+                 <div class="price heading">
+                    <h5>$3.20</h5>
+                 </div>
+                 </div>
+           
+            <div class="box flex1">
+                <div class="img">
+                    <img src="image/cap6.png" class="cap" alt="">
+                </div>
+                <div class="text">
+                    <h3>Peppermint</h3>
+                    <p>Coffee 50% , Milk 50% 280 ml</p>
+                </div>
+                 <hr>
+                 <div class="price heading">
+                    <h5>$3.20</h5>
+                 </div>
+           </div>
+
+        <div class="box flex1">
+            <div class="img">
+                <img src="image/cap7.png" class="cap" alt="">
+            </div>
+            <div class="text">
+                <h3>Hazelnut</h3>
+                <p>Coffee 50% , Milk 50% 280 ml</p>
+            </div>
+             <hr>
+             <div class="price heading">
+                <h5>$3.20</h5>
+             </div>
+        </div>
+    
+    </div>
+     </div>
+     </div>
+</section>
+
+<section class="opentime flex1 mtop">
+  <div class="left">
+    <div class="heading">
+        <h1><span>Barista-Party<br></span>every friday & Sunday</h1>
+        <i class="fas fa-play"></i>
+    </div>
+        <div class="img">
+            <img src="image/01.jpg"  alt="">
+        </div>
+  </div>
+
+  <div class="right">
+    <div class="box box1">
+
+        <div class="img">
+            <img src="image/02.jpg"  alt="">
+        </div>
+        <div class="heading">
+            <h1><span>Opening Hours</span></h1>
+        </div>
+        <div class="time">
+            <div class="day  flex1">
+                <h4>Monday: </h4>
+                <h5>9:00am - 11:30pm</h5>
+            </div>
+            <div class="day  flex1">
+                <h4>Tuesday: </h4>
+                <h5>9:00am - 12:00pm</h5>
+            </div>
+            <div class="day  flex1">
+                <h4>Wednesday: </h4>
+                <h5>7:00am - 12:30pm</h5>
+            </div>
+            <div class="day  flex1">
+                <h4>Thursday: </h4>
+                <h5>7:00am - 10:00pm</h5>
+            </div>
+            <div class="day  flex1">
+                <h4>Friday: </h4>
+                <h5>10:00am - 12:00pm</h5>
+            </div>
+            <div class="day  flex1">
+                <h4>Saturday: </h4>
+                <h5>10:00am - 9:00pm</h5>
+            </div>
+            <div class="day  flex1">
+                <h4>Sunday: </h4>
+               <p>CLOSED</p>
+            </div>
+        </div>
+    </div>
+   <div class="box box2">
+     <div class="img">
+        <img src="image/03.jpg" alt="">
+     </div>
+     <div class="heading">
+      <h1><span>cheesecake</span><br>& Coffee Beans</h1>
+     </div>
+   </div>
+  </div>
+
+</section>
+
+<section class="product mtop">
+<div class="heading">
+    <h5 class="x-head">Online Store</h5>
+    <h2  class="y-head">Take with you</h2>
+    
+</div>
+   <div class="grid-cont">
+    <div class="inside-1">
+      <img src="image/bag1.png" class="prod-mock" alt="">
+ 
+      <h4 class="title-h4">Italian Blend</h4>
+
+    </div>
+    <div class="inside-1">
+        <img src="image/bag2.png" class="prod-mock" alt="">
+        <h4 class="title-h4">Brazilian Roast</h4>
+    </div>
+    <div class="inside-1">
+        <img src="image/bag3.png" class="prod-mock" alt="">
+        <h4 class="title-h4">Roasted Bean</h4>
+    </div>
+    <div class="inside-1">
+        <img src="image/bag4.png" class="prod-mock" alt="">
+        <h4 class="title-h4">salted Caramel</h4>
+    </div>
+   </div>
+ <div class="type">
+ <button  type="button" name="button" class="x-btn">Online store</button>
+ </div>
+ 
+<!-- TESTIMONIALS -->
+    
+<section class="card-test">
+  
+    <div class="testimonial mySwiper">
+        <div class="testi-content swiper-pack">
+          <div class="slide swiper-slide">
+            <img src="image/customer2.jpg" alt="" class="picture" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Maria Steel</span>
+              <span class="job">Cocktail Bar Owner</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="image/costumer1.jpeg" alt="" class="picture" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Jane Abraham</span>
+              <span class="job">Clientelle</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="image/customer3.jpg" alt="" class="picture" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Entrepreneur</span>
+            </div>
+          </div>
+        </div>
+       
+      </div> 
+</section>
+
+  <section class="brand">
+<div class="container grid">
+  <div class="img">
+    <img src="image/L1.jpg" alt="">
+  </div>
+  <div class="img">
+    <img src="image/L2.jpg" alt="">
+  </div>
+  <div class="img">
+    <img src="image/L3.jpg" alt="">
+  </div>
+  <div class="img">
+    <img src="image/L4.jpg" alt="">
+  </div>
+  <div class="img">
+    <img src="image/L5.jpg" alt="">
+  </div>
+</div>
+
+  </section>
+
+  <section class="blog mtop">
+    <div class="heading">
+        <h5>Our Blog</h5>
+        <h2>Recent Articles</h2>
+    </div>
+
+    <div class="content grid">
+        <div class="box">
+            <div class="img">
+                <img  src="image/blog.jpg" alt="">
+                <span>Coffee Breads</span>
+            </div>
+            <div class="text">
+                <div class="icon flex1">
+                    <div class="date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <label>March 12 2023</label>
+                    </div>
+                    <div class="date">
+                        <i class="fas  fa-comment-dots"></i>
+                        <label>0</label>
+                    </div>
+                    <div class="date">
+                        <i class="fas  fa-eyes"></i>
+                        <label>170</label>
+                    </div>
+
+                </div>
+                   <h2>Coffee Machine Rental  &  Business Deliveries</h2>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img  src="image/blog 3.jpg" alt="">
+                <span>Coffee Breads</span>
+            </div>
+            <div class="text">
+                <div class="icon flex1">
+                    <div class="date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <label>March 12 2023</label>
+                    </div>
+                    <div class="date">
+                        <i class="fas  fa-comment-dots"></i>
+                        <label>0</label>
+                    </div>
+                    <div class="date">
+                        <i class="fas  fa-eyes"></i>
+                        <label>170</label>
+                    </div>
+
+                </div>
+                   <h2>Coffee Machine Rental  &  Business Deliveries</h2>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img  src="image/blog2.jpg" alt="">
+                <span>Coffee Breads</span>
+            </div>
+            <div class="text">
+                <div class="icon flex1">
+                    <div class="date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <label>March 12 2023</label>
+                    </div>
+                    <div class="date">
+                        <i class="fas  fa-comment-dots"></i>
+                        <label>0</label>
+                    </div>
+                    <div class="date">
+                        <i class="fas  fa-eyes"></i>
+                        <label>170</label>
+                    </div>
+
+                </div>
+                   <h2>Coffee Machine Rental  &  Business Deliveries</h2>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img  src="image/blog   4.jpg" alt="">
+                <span>Coffee Breads</span>
+            </div>
+            <div class="text">
+                <div class="icon flex1">
+                    <div class="date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <label>March 12 2023</label>
+                    </div>
+                    <div class="date">
+                        <i class="fas  fa-comment-dots"></i>
+                        <label>0</label>
+                    </div>
+                    <div class="date">
+                        <i class="fas  fa-eyes"></i>
+                        <label>170</label>
+                    </div>
+
+                </div>
+                   <h2>Coffee Machine Rental  &  Business Deliveries</h2>
+            </div>
+        </div>
+    </div>
+    <button type="button" name="button">Read More</button>
+  </section>
+
+  <section class="image top">
+    <div class="content grid">
+        <div class="box">  
+            <div class="img">
+            <img src="image/a1.jpg" alt="">
+        </div>
+         <div class="icon">
+            <i class="fas fa-search-plus"></i>
+         </div>
+    </div>
+    <div class="box">
+        <div class="img">
+        <img src="image/a2.jpg" alt="">
+    </div>
+     <div class="icon">
+        <i class="fas fa-search-plus"></i>
+     </div>
+</div>
+<div class="box">
+    <div class="img">
+    <img src="image/a3.jpg" alt="">
+</div>
+ <div class="icon">
+    <i class="fas fa-search-plus"></i>
+ </div>
+</div>
+<div class="box">
+    <div class="img">
+    <img src="image/a4.jpg" alt="">
+</div>
+ <div class="icon">
+    <i class="fas fa-search-plus"></i>
+ </div>
+</div>
+<div class="box">
+    <div class="img">
+    <img src="image/a5.jpg" alt="">
+</div>
+ <div class="icon">
+    <i class="fas fa-search-plus"></i>
+ </div>
+</div>
+<div class="box">
+    <div class="img">
+    <img src="image/a6.jpg" alt="">
+</div>
+ <div class="icon">
+    <i class="fas fa-search-plus"></i>
+ </div>
+</div>
+  
+       </div>
+  </section>
+
+<footer>
+    <div class="footerbg">
+        <div class="content grid">
+            <div class="box">
+                <div class="logo">
+                    <img src="image/beandicated web logo.png"  alt="">
+                </div>
+                <p>We are happy to serve you with our amazing and delicious coffee made with  passion and heartwarming dedication in craft  that we are  introducing you.</p>
+ <div class="icon flex">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-youtube"></i>
+    <i class="fab fa-instagram"></i>
+ </div>               
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <div class="address">
+                    <div class="item flex">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="text">
+                            <h5>Our Location:</h5>
+                            <span>Jose Abad Pampanga</span>
+                        </div>
+                    </div>
+                    <div class="item flex">
+                        <div class="icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="text">
+                            <h5>Phone Number:</h5>
+                            <span>+63 991 518 7305</span>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+         <div class="box">
+            <h3>Subscribe</h3>
+            <div class="input flex1">
+
+      <input type="text" placeholder="Your email...">
+      <input type="submit" placeholder="Subscribe" class="submit">
+            </div>
+            <div class="check">
+                <input type="checkbox" name="" value="">
+                <span>I Agree to the terms & conditions.</span>
+            </div>
+         </div>
+
+        </div>
+    </div>
+    <div class="legal">
+        <p>Copyright (c) 2023 Copyright Holder All Rights Reserved.</p>
+    </div>
+</footer>  
+<script src="app.js"></script>
+</body>
+</html>
